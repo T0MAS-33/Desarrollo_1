@@ -1,0 +1,257 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Título del header */
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Estilo para el menú de enlaces */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para cada enlace del menú */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover de enlaces */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav .active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Contenedor principal */
+main {
+    background-color: white;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Contenedor del formulario */
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Título del formulario */
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Estilos de los inputs y select */
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+/* Cambia el borde cuando el input está en focus */
+input:focus, select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Estilos del botón de enviar */
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Mensaje de confirmación o error */
+#mensaje {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#mensaje.success {
+    color: #4CAF50;
+}
+
+#mensaje.error {
+    color: #f44336;
+}
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+/* Contenedor principal */
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que los paddings y bordes no afecten el ancho */
+    overflow: visible; /* Permite que el contenido visible no se corte */
+}
+
+/* Contenedor para la tabla */
+.table-container {
+    overflow-x: auto; /* Scroll horizontal si es necesario */
+    width: 100%; /* Ajuste total al contenedor */
+    margin-top: 20px; /* Espaciado entre la tabla y otros elementos */
+}
+
+/* Estilos para la tabla de citas */
+table {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    border-collapse: collapse;
+    font-size: 1rem;
+    table-layout: fixed; /* Asegura columnas uniformes */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word; /* Ajusta texto largo dentro de las celdas */
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    color: #333;
+}
+
+/* Mensaje de citas */
+#lista-citas {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+#lista-citas p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}

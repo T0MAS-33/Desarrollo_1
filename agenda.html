@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu Cita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agendar Cita</h1>
+        <nav>
+            <a href="index.html" >Inicio</a>
+            <a href="agenda.html" >Agendar Cita</a>
+            <a href="ver-citas.html" >Ver Citas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="agenda">
+            <h2>Programa tu Mantenimiento</h2>
+            <form id="form-agenda">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="tipo_servicio">Tipo de Servicio:</label>
+                <select id="tipo_servicio" name="tipo_servicio" required>
+                    <option value="domicilio">A domicilio</option>
+                    <option value="presencial">Presencial en nuestro local</option>
+                </select>
+                <label for="tipo_mantenimiento">Tipo de Mantenimiento</label>
+                <select id="tipo_mantenimiento" name="tipo_mantenimiento" required>
+                    <option value="Preventivo">Mantenimiento Preventivo</option>
+                    <option value="correctivo">Mantenimiento correctivo</option>
+                    <option value="Predictivo">Mantenimiento Predictivo</option>
+                </select>
+
+                <label for="fecha">Fecha de Cita:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora de Cita:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Agendar Cita</button>
+            </form>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
